@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+</head>
+<style>
+    body {
+        background-color: rgb(135, 162, 250);
+    }
+
+    .container {
+        margin: 14% auto;
+        background-color: white;
+        width: 30%;
+        border-radius: 0.75rem;
+    }
+
+    .heading {
+        text-align: center;
+        padding: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-bottom: 0px;
+    }
+
+    .alertMsg {
+        text-align: center;
+        font-size: 20px;
+        color: red;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 0px;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        height: 4vh;
+        gap: 0.75rem;
+    }
+
+    input {
+        border-radius: 0.75rem;
+        border: 1px solid #000;
+        text-indent: 80px;
+    }
+
+    #submitGuess {
+        background-color: rgb(135, 162, 250);
+        color: white;
+        border: none;
+        padding: 4px 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 2px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+
+    .Guess {
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .remaining {
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading">Guess Number</h1>
+        <div class="input">
+            <p class="alertMsg"></p>
+            <form class="form">
+                <input type="text" id="number" class="text">
+                <button id="submitGuess">Check</button>
+            </form>
+        </div>
+        <div class="result">
+            <p class="Guess">Your Guess: <span class="preGuess"></span></p>
+            <p class="remaining">Guess Remaining <span class="remainingChance">:10</span></p>
+        </div>
+        <br>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
